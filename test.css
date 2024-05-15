@@ -1,0 +1,38 @@
+.box {
+    display: flex;
+    border: 1px solid #ccc;
+    width: 96vw;
+    margin: 20px auto;
+    height: 52vw;
+}
+
+.sidebar {
+    width: 45%; /* Adjusted width */
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.content {
+    flex: 1;
+    padding: 10px;
+}
+.content img {
+    width: 20vw;
+    height: 30vw;
+}
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Added styles for active and inactive headers */
+.header.active {
+    color: black;
+}
+
+.header:not(.active) {
+    color: #504B45;
+}
